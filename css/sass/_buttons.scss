@@ -1,12 +1,12 @@
 .btn {
   display: inline-block;
-  color: $white-light;
+  color: $black-light;
   transition: .6s ease;
   padding: 18px 72px 18px 64px;
   text-align: center;
   
   background: linear-gradient(225deg, $primary-normal 8.12%, $secondary-dark 92.21%);
-  border-radius: 2px;
+  border-radius: 32px;
 
   @include typeface-1(h6, desktop);
   @include responsive(s) {
@@ -119,13 +119,13 @@
 
 .btn-small {
   display: inline-block;
-  color: $white-light;
+  color: $black-light;
   transition: .6s ease;
   padding: 12px 28px 12px 28px;
   text-align: center;
   
   background: linear-gradient(225deg, $primary-normal 8.12%, $secondary-dark 92.21%);
-  border-radius: 2px;
+  border-radius: 32px;
 
   @include typeface-1(h6, desktop);
   @include responsive(s) {

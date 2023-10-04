@@ -4,42 +4,42 @@
 
 @mixin typeface-1($size, $device: desktop) {
 
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Exo 2', sans-serif;
 
   @if $size == hbig and $device == desktop {
-    font-size: 96px;
-    line-height: 120%;
+    font-size: 600px;
+    line-height: 100%;
     font-weight: 300;
   } @else if $size == hbig and $device == mobile {
-    font-size: 56px;
-    line-height: 120%;
+    font-size: 360px;
+    line-height: 100%;
     font-weight: 300;
   } @else if $size == hbig and $device == smallmobile {
-    font-size: 36px;
-    line-height: 120%;
+    font-size: 120px;
+    line-height: 100%;
     font-weight: 300;
   }
   
   @if $size == h0 and $device == desktop {
     font-size: 240px;
-    line-height: 120%;
+    line-height: 100%;
     font-weight: 300;
   } @else if $size == h0 and $device == mobile {
-    font-size: 80px;
-    line-height: 120%;
+    font-size: 120px;
+    line-height: 100%;
     font-weight: 300;
   } @else if $size == h0 and $device == smallmobile {
-    font-size: 24px;
-    line-height: 120%;
+    font-size: 64px;
+    line-height: 100%;
     font-weight: 300;
   }
 
   @if $size == h1 and $device == desktop {
-    font-size: 80px;
+    font-size: 120px;
     line-height: 110%;
     font-weight: 300;
   } @else if $size == h1 and $device == mobile {
-    font-size: 52px;
+    font-size: 64px;
     line-height: 110%;
     font-weight: 300;
   } @else if $size == h1 and $device == smallmobile {
@@ -184,13 +184,29 @@
   }
 }
 
+.h-big{
+  color: rgba(24, 59, 97, 0.5);
+  @include typeface-1(hbig, desktop);
+
+  @include responsive(s) {
+    @include typeface-1(hbig, mobile);
+  }
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
 .h0{
   @include typeface-1(h0, desktop);
-  letter-spacing: 20px;
+  letter-spacing: 32px;
 
   @include responsive(s) {
     @include typeface-1(h0, mobile);
-    letter-spacing: 10px;
+    letter-spacing: 16px;
   }
 
   @include responsive(xs) {
@@ -199,16 +215,46 @@
   }
 }
 
+.text-shadow-title{
+  text-shadow: 0px 16px 32px rgba(0, 0, 0, 0.80);
+}
+
+.label-spacing-xl{
+  letter-spacing: 32px !important;
+
+  @include responsive(s){
+    letter-spacing: 4px !important;
+  }
+}
+
+.label-spacing-m{
+  letter-spacing: 12px !important;
+
+  @include responsive(s){
+    letter-spacing: 4px !important;
+  }
+}
+
+.new-font{
+  font-family: 'Bebas Neue', sans-serif;
+}
+
 h1 {
   color: $white-light;
   z-index: 5;
+  letter-spacing: 2px;
+
   @include typeface-1(h1, desktop);
+
   @include responsive(s) {
     @include typeface-1(h1, mobile);
+    letter-spacing: 0px;
   }
   @include responsive(xs) {
     @include typeface-1(h1, smallmobile);
+    letter-spacing: 0px;
   }
+  
 }
 
 h2 {

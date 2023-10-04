@@ -35,13 +35,13 @@
 
 .color-gradient {
   display: inline-block;
-  background: linear-gradient(225deg, #FFFF41 8.12%, #6926F6 92.21%);
+  background: linear-gradient(225deg, #FFFF41 8.12%, #FFFF41 92.21%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .label {
-  background: linear-gradient(225deg, #FFFF41 8.12%, #6926F6 92.21%);
+  background: linear-gradient(225deg, #FFFF41 8.12%, #FFFF41 92.21%);
   display: inline-block;
   padding: 3px 8px;
   border-radius: 2px;
@@ -971,7 +971,7 @@ footer {
   width: 180px;
   height: 180px;
   border-radius: 50%;
-  background: linear-gradient(217.58deg, #FFFF41 0.58%, #5001EE 97.98%);
+  background: linear-gradient(217.58deg, #FFFF41 0.58%, #FFF700 97.98%);
   box-shadow: inset 10px 10px 33px rgba(38, 45, 165, 0.6);
   position: relative;
 }
@@ -995,7 +995,7 @@ footer {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background: linear-gradient(217.58deg, #FFFF41 0.58%, #5001EE 97.98%);
+  background: linear-gradient(217.58deg, #FFFF41 0.58%, #FFF700 97.98%);
   box-shadow: inset 10px 10px 33px rgba(38, 45, 165, 0.6);
   position: relative;
 }
@@ -1019,7 +1019,7 @@ footer {
   width: 180px;
   height: 180px;
   border-radius: 40px;
-  background: linear-gradient(225deg, #FFFF41 0.58%, #5001EE 97.98%);
+  background: linear-gradient(225deg, #FFFF41 0.58%, #FFF700 97.98%);
   box-shadow: inset 10px 10px 33px rgba(38, 45, 165, 0.6);
   position: relative;
 }
@@ -2055,67 +2055,117 @@ footer {
   padding-bottom: 128px !important;
 }
 
-.h0 {
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 240px;
-  line-height: 120%;
+.h-big {
+  color: rgba(24, 59, 97, 0.5);
+  font-family: "Exo 2", sans-serif;
+  font-size: 600px;
+  line-height: 100%;
   font-weight: 300;
-  letter-spacing: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+@media screen and (max-width: 960px) {
+  .h-big {
+    font-family: "Exo 2", sans-serif;
+    font-size: 360px;
+    line-height: 100%;
+    font-weight: 300;
+  }
+}
+
+.h0 {
+  font-family: "Exo 2", sans-serif;
+  font-size: 240px;
+  line-height: 100%;
+  font-weight: 300;
+  letter-spacing: 32px;
 }
 @media screen and (max-width: 960px) {
   .h0 {
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 80px;
-    line-height: 120%;
+    font-family: "Exo 2", sans-serif;
+    font-size: 120px;
+    line-height: 100%;
     font-weight: 300;
-    letter-spacing: 10px;
+    letter-spacing: 16px;
   }
 }
 @media screen and (max-width: 340px) {
   .h0 {
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 24px;
-    line-height: 120%;
+    font-family: "Exo 2", sans-serif;
+    font-size: 64px;
+    line-height: 100%;
     font-weight: 300;
     letter-spacing: 8px;
   }
 }
 
+.text-shadow-title {
+  text-shadow: 0px 16px 32px rgba(0, 0, 0, 0.8);
+}
+
+.label-spacing-xl {
+  letter-spacing: 32px !important;
+}
+@media screen and (max-width: 960px) {
+  .label-spacing-xl {
+    letter-spacing: 4px !important;
+  }
+}
+
+.label-spacing-m {
+  letter-spacing: 12px !important;
+}
+@media screen and (max-width: 960px) {
+  .label-spacing-m {
+    letter-spacing: 4px !important;
+  }
+}
+
+.new-font {
+  font-family: "Bebas Neue", sans-serif;
+}
+
 h1 {
   color: #F7F1FC;
   z-index: 5;
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 80px;
+  letter-spacing: 2px;
+  font-family: "Exo 2", sans-serif;
+  font-size: 120px;
   line-height: 110%;
   font-weight: 300;
 }
 @media screen and (max-width: 960px) {
   h1 {
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 52px;
+    font-family: "Exo 2", sans-serif;
+    font-size: 64px;
     line-height: 110%;
     font-weight: 300;
+    letter-spacing: 0px;
   }
 }
 @media screen and (max-width: 340px) {
   h1 {
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Exo 2", sans-serif;
     font-size: 48px;
     line-height: 120%;
     font-weight: 300;
+    letter-spacing: 0px;
   }
 }
 
 h2 {
   color: #F7F1FC;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-size: 64px;
   line-height: 110%;
   font-weight: 300;
 }
 @media screen and (max-width: 960px) {
   h2 {
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Exo 2", sans-serif;
     font-size: 40px;
     line-height: 120%;
     font-weight: 300;
@@ -2123,7 +2173,7 @@ h2 {
 }
 @media screen and (max-width: 340px) {
   h2 {
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Exo 2", sans-serif;
     font-size: 36px;
     line-height: 120%;
     font-weight: 300;
@@ -2132,14 +2182,14 @@ h2 {
 
 h3 {
   color: #F7F1FC;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-size: 48px;
   line-height: 120%;
   font-weight: 300;
 }
 @media screen and (max-width: 960px) {
   h3 {
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Exo 2", sans-serif;
     font-size: 36px;
     line-height: 120%;
     font-weight: 300;
@@ -2147,7 +2197,7 @@ h3 {
 }
 @media screen and (max-width: 340px) {
   h3 {
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Exo 2", sans-serif;
     font-size: 32px;
     line-height: 130%;
     font-weight: 300;
@@ -2156,14 +2206,14 @@ h3 {
 
 h4 {
   color: #F7F1FC;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-size: 32px;
   line-height: 130%;
   font-weight: 300;
 }
 @media screen and (max-width: 960px) {
   h4 {
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Exo 2", sans-serif;
     font-size: 28px;
     line-height: 140%;
     font-weight: 300;
@@ -2171,7 +2221,7 @@ h4 {
 }
 @media screen and (max-width: 340px) {
   h4 {
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Exo 2", sans-serif;
     font-size: 20px;
     line-height: 150%;
     font-weight: 300;
@@ -2180,14 +2230,14 @@ h4 {
 
 h5 {
   color: #F7F1FC;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-size: 24px;
   line-height: 140%;
   font-weight: 400;
 }
 @media screen and (max-width: 960px) {
   h5 {
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Exo 2", sans-serif;
     font-size: 20px;
     line-height: 140%;
     font-weight: 400;
@@ -2196,14 +2246,14 @@ h5 {
 
 h6 {
   color: #F7F1FC;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-size: 18px;
   line-height: 150%;
   font-weight: 400;
 }
 @media screen and (max-width: 960px) {
   h6 {
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Exo 2", sans-serif;
     font-size: 16px;
     line-height: 150%;
     font-weight: 400;
@@ -2211,14 +2261,14 @@ h6 {
 }
 
 .h7 {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-size: 16px;
   line-height: 150%;
   font-weight: 400;
 }
 @media screen and (max-width: 960px) {
   .h7 {
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Exo 2", sans-serif;
     font-size: 16px;
     line-height: 150%;
     font-weight: 400;
@@ -2357,15 +2407,15 @@ span {
   color: #EAE1F1;
   letter-spacing: 1px;
   text-transform: none;
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 80px;
+  font-family: "Exo 2", sans-serif;
+  font-size: 120px;
   line-height: 110%;
   font-weight: 300;
 }
 @media screen and (max-width: 960px) {
   .letter-h1 {
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 52px;
+    font-family: "Exo 2", sans-serif;
+    font-size: 64px;
     line-height: 110%;
     font-weight: 300;
   }
@@ -2405,17 +2455,17 @@ b {
 
 .h-xl {
   color: #EAE1F1;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-size: 240px;
-  line-height: 120%;
+  line-height: 100%;
   font-weight: 300;
   font-size: 240px;
 }
 @media screen and (max-width: 960px) {
   .h-xl {
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 80px;
-    line-height: 120%;
+    font-family: "Exo 2", sans-serif;
+    font-size: 120px;
+    line-height: 100%;
     font-weight: 300;
     font-size: 144px;
   }
@@ -2423,33 +2473,33 @@ b {
 
 .h-l {
   color: #EAE1F1;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-size: 240px;
-  line-height: 120%;
+  line-height: 100%;
   font-weight: 300;
   font-size: 144px;
 }
 @media screen and (max-width: 960px) {
   .h-l {
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 80px;
-    line-height: 120%;
+    font-family: "Exo 2", sans-serif;
+    font-size: 120px;
+    line-height: 100%;
     font-weight: 300;
     font-size: 96px;
   }
 }
 
 .hbig {
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 96px;
-  line-height: 120%;
+  font-family: "Exo 2", sans-serif;
+  font-size: 600px;
+  line-height: 100%;
   font-weight: 300;
 }
 @media screen and (max-width: 960px) {
   .hbig {
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 56px;
-    line-height: 120%;
+    font-family: "Exo 2", sans-serif;
+    font-size: 360px;
+    line-height: 100%;
     font-weight: 300;
   }
 }
@@ -2622,13 +2672,13 @@ header {
 
 .btn {
   display: inline-block;
-  color: #F7F1FC;
+  color: #142036;
   transition: 0.6s ease;
   padding: 18px 72px 18px 64px;
   text-align: center;
-  background: linear-gradient(225deg, #FFF700 8.12%, #4100C8 92.21%);
-  border-radius: 2px;
-  font-family: "Bebas Neue", sans-serif;
+  background: linear-gradient(225deg, #FFF700 8.12%, #DFDC00 92.21%);
+  border-radius: 32px;
+  font-family: "Exo 2", sans-serif;
   font-size: 18px;
   line-height: 150%;
   font-weight: 400;
@@ -2637,7 +2687,7 @@ header {
 }
 @media screen and (max-width: 960px) {
   .btn {
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Exo 2", sans-serif;
     font-size: 16px;
     line-height: 150%;
     font-weight: 400;
@@ -2684,7 +2734,7 @@ header {
   background: transparent;
   border-radius: 2px;
   border: 4px solid #24324D;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-size: 18px;
   line-height: 150%;
   font-weight: 400;
@@ -2693,7 +2743,7 @@ header {
 }
 @media screen and (max-width: 960px) {
   .btn-link {
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Exo 2", sans-serif;
     font-size: 16px;
     line-height: 150%;
     font-weight: 400;
@@ -2719,13 +2769,13 @@ header {
 
 .btn-small {
   display: inline-block;
-  color: #F7F1FC;
+  color: #142036;
   transition: 0.6s ease;
   padding: 12px 28px 12px 28px;
   text-align: center;
-  background: linear-gradient(225deg, #FFF700 8.12%, #4100C8 92.21%);
-  border-radius: 2px;
-  font-family: "Bebas Neue", sans-serif;
+  background: linear-gradient(225deg, #FFF700 8.12%, #DFDC00 92.21%);
+  border-radius: 32px;
+  font-family: "Exo 2", sans-serif;
   font-size: 18px;
   line-height: 150%;
   font-weight: 400;
@@ -2733,7 +2783,7 @@ header {
 }
 @media screen and (max-width: 960px) {
   .btn-small {
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Exo 2", sans-serif;
     font-size: 16px;
     line-height: 150%;
     font-weight: 400;
@@ -2748,7 +2798,7 @@ header {
   text-align: center;
   background: linear-gradient(225deg, #F7F1FC 8.12%, #D0C1DC 92.21%);
   border-radius: 2px;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-size: 18px;
   line-height: 150%;
   font-weight: 400;
@@ -2756,7 +2806,7 @@ header {
 }
 @media screen and (max-width: 960px) {
   .btn-white {
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Exo 2", sans-serif;
     font-size: 16px;
     line-height: 150%;
     font-weight: 400;
@@ -2776,14 +2826,14 @@ header {
   background: transparent;
   border: 2px solid #142036;
   border-radius: 8px;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-size: 16px;
   line-height: 150%;
   font-weight: 400;
 }
 @media screen and (max-width: 960px) {
   .btn-secondary {
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Exo 2", sans-serif;
     font-size: 16px;
     line-height: 150%;
     font-weight: 400;
@@ -2827,7 +2877,7 @@ a:hover {
 
 .link {
   color: #EAE1F1;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-size: 18px;
   line-height: 150%;
   font-weight: 400;
@@ -2836,7 +2886,7 @@ a:hover {
 }
 @media screen and (max-width: 960px) {
   .link {
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Exo 2", sans-serif;
     font-size: 16px;
     line-height: 150%;
     font-weight: 400;
@@ -2960,7 +3010,7 @@ select{
   left: 0;
   width: 0;
   height: 100%;
-  background: linear-gradient(255deg, #FFFF41 0.58%, #4100C8 97.98%);
+  background: linear-gradient(255deg, #FFFF41 0.58%, #DFDC00 97.98%);
   animation: bar-loader 7s ease forwards;
 }
 
@@ -2985,14 +3035,14 @@ select{
   border-bottom: 2px solid #142036;
   transition: 0.7s ease;
   color: #EAE1F1;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-size: 18px;
   line-height: 150%;
   font-weight: 400;
 }
 @media screen and (max-width: 960px) {
   .accordion-button {
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Exo 2", sans-serif;
     font-size: 16px;
     line-height: 150%;
     font-weight: 400;
@@ -3008,7 +3058,7 @@ select{
   height: 8px;
   transform: translate(0, -50%);
   transition: 1s ease;
-  background: linear-gradient(225deg, #FFF700 8.12%, #4100C8 92.21%);
+  background: linear-gradient(225deg, #FFF700 8.12%, #DFDC00 92.21%);
   background-repeat: no-repeat;
 }
 .accordion-button::before {
