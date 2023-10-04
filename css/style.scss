@@ -31,8 +31,8 @@ body{
 
   &::-webkit-scrollbar-thumb{
       border-radius: 10px;
-      background: $gray-3;
-      border: 6px solid $black-dark;
+      background: $black-lighten;
+      border: 6px solid $white-light;
   }
 }
 

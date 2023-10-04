@@ -2,15 +2,15 @@
   display: inline-block;
   color: $black-light;
   transition: .6s ease;
-  padding: 18px 72px 18px 64px;
+  padding: 12px 40px 12px 40px;
   text-align: center;
   
   background: linear-gradient(225deg, $primary-normal 8.12%, $secondary-dark 92.21%);
   border-radius: 32px;
 
-  @include typeface-1(h6, desktop);
+  @include typeface-1(h7, desktop);
   @include responsive(s) {
-    @include typeface-1(h6, mobile);
+    @include typeface-1(h7, mobile);
   }
 
   position: relative;
@@ -18,50 +18,8 @@
 
   //border: 2px solid #EC56EC;
 
-  &::after{
-    content: '';
-
-    width: 32px;
-    height: 32px;
-
-    background-image: url('../svg/icon-hexagon-pink.svg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-
-    position: absolute;
-    top: 50%;
-    left: 32px;
-
-    transform: translate(-50%, -50%);
-  }
-
-  &::before{
-    content: '';
-
-    width: 52px;
-    height: 40px;
-
-    background-image: url('../svg/icon-arrow-right.svg');
-    background-size: 44%;
-    background-position: center center;
-    background-repeat: no-repeat;
-
-    position: absolute;
-    top: 50%;
-    right: -20px;
-
-    border-left: 2px solid rgba(255,255,255,0.25);
-
-    transform: translate(-50%, -50%);
-
-    transition: 0.5s ease;
-  }
-
   &:hover{
-    &::before{
-      transform: translate(-50%, -50%) translate3d(6px, 0, 0);
-    }
+    opacity: .7;
   }
 
 }
@@ -121,15 +79,15 @@
   display: inline-block;
   color: $black-light;
   transition: .6s ease;
-  padding: 12px 28px 12px 28px;
+  padding: 10px 24px 10px 24px;
   text-align: center;
   
   background: linear-gradient(225deg, $primary-normal 8.12%, $secondary-dark 92.21%);
   border-radius: 32px;
 
-  @include typeface-1(h6, desktop);
+  @include typeface-1(h7, desktop);
   @include responsive(s) {
-    @include typeface-1(h6, mobile);
+    @include typeface-1(h7, mobile);
   }
 
   position: relative;

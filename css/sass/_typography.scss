@@ -22,15 +22,15 @@
   
   @if $size == h0 and $device == desktop {
     font-size: 240px;
-    line-height: 100%;
+    line-height: 80%;
     font-weight: 300;
   } @else if $size == h0 and $device == mobile {
     font-size: 120px;
-    line-height: 100%;
+    line-height: 90%;
     font-weight: 300;
   } @else if $size == h0 and $device == smallmobile {
     font-size: 64px;
-    line-height: 100%;
+    line-height: 90%;
     font-weight: 300;
   }
 
@@ -216,7 +216,7 @@
 }
 
 .text-shadow-title{
-  text-shadow: 0px 12px 64px rgba(0, 0, 0, 0.70);
+  text-shadow: 0px 16px 64px rgba(0, 0, 0, 0.60);
 }
 
 .label-spacing-xl{
@@ -318,12 +318,12 @@ h6 {
 p {
   letter-spacing: 0px;
   color: $gray-7;
-  @include typeface-2(p2, desktop);
+  @include typeface-2(p3, desktop);
   @include responsive(s) {
-    @include typeface-2(p2, mobile);
+    @include typeface-2(p3, mobile);
   }
   @include responsive(xs) {
-    @include typeface-2(p2, smallmobile);
+    @include typeface-2(p3, smallmobile);
   }
 }
 

@@ -52,8 +52,10 @@ document.querySelectorAll('.accordion-button').forEach(button => {
 });
 
 
-//var textWrapper = document.querySelector('.letters');
-//textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter-h1'>$&</span>");   
+// Wrap every letter in a span
+
+var textWrapper = document.querySelector('.ml12');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
 
 /*--=========== GSAP SCROLLTRIGGER ============- */
@@ -68,11 +70,18 @@ document.addEventListener("DOMContentLoaded", () => {
     .to('.screen-loading', {
       duration: 2,
       opacity: 0, 
-      delay: 6,
+      delay: 5,
       //filter: 'blur(10px)',
       //y: "-10%",
       ease: "power4.out",
     })
+    .from(".box-hero span", {
+      duration: 2, 
+      opacity: 0, 
+      y: 300,
+      stagger:{each: 0.1},
+      ease: "back.out(1.7)",
+    }, '-=1.5')
     .from(".box-hero div", {
       duration: 3, 
       opacity: 0, 
@@ -81,225 +90,86 @@ document.addEventListener("DOMContentLoaded", () => {
       ease: "back.out(1.7)",
     }, '-=1.5')
 
-    
-    /*--=========== ANIMAÇÕES ============- */
-    gsap.from("#text-devs",{
-      opacity: 0,
-      y: 80,
-      ease: "power1.out",
-      scrollTrigger:{
-        trigger: '#text-devs',
-        start: 'center 80%',
-        end: 'center 60%',
-        scrub: 3,
-        //markers: true,
-      }
-    });
-    gsap.from("#text-uidesigners",{
-      y: 80,
-      opacity: 0,
-      ease: "power1.out",
-      scrollTrigger:{
-        trigger: '#text-uidesigners',
-        start: 'center 80%',
-        end: 'center 60%',
-        scrub: 3,
-        //markers: true,
-      }
-    });
-    gsap.from("#text-graphicdesigners",{
-      y: 80,
-      opacity: 0,
-      ease: "power1.out",
-      scrollTrigger:{
-        trigger: '#text-graphicdesigners',
-        start: 'center 80%',
-        end: 'center 65%',
-        scrub: 3,
-        //markers: true,
-      }
-    });
-    gsap.from("#text-nocode",{
-      y: 80,
-      opacity: 0,
-      ease: "power1.out",
-      scrollTrigger:{
-        trigger: '#text-nocode',
-        start: 'center 80%',
-        end: 'center 70%',
-        scrub: 3,
-        //markers: true,
-      }
-    });
-
-    gsap.from("#text-simple",{
-      y: -50,
-      opacity: 0,
-      ease: "power1.out",
-      scrollTrigger:{
-        trigger: '#text-simple',
-        start: 'top 70%',
-        end: 'top 50%',
-        scrub: 3,
-        //markers: true,
-      }
-    });
-
-    gsap.from("#text-interactive",{
-      x: 70,
-      opacity: 0,
-      ease: "power1.out",
-      scrollTrigger:{
-        trigger: '#text-interactive',
-        start: 'top 70%',
-        end: 'top 50%',
-        scrub: 3,
-        //markers: true,
-      }
-    });
-
-    gsap.from("#text-compatible",{
-      x: -70,
-      opacity: 0,
-      ease: "power1.out",
-      scrollTrigger:{
-        trigger: '#text-compatible',
-        start: 'top 70%',
-        end: 'top 50%',
-        scrub: 3,
-        //markers: true,
-      }
-    });
-
-    gsap.from("#text-shocking",{
-      x: 70,
-      opacity: 0,
-      ease: "power1.out",
-      scrollTrigger:{
-        trigger: '#text-shocking',
-        start: 'top 70%',
-        end: 'top 50%',
-        scrub: 3,
-        //markers: true,
-      }
-    });
-
-    gsap.from("#text-created",{
-      x: -70,
-      opacity: 0,
-      ease: "power1.out",
-      scrollTrigger:{
-        trigger: '#text-created',
-        start: 'top 70%',
-        end: 'top 50%',
-        scrub: 3,
-        //markers: true,
-      }
-    });
-
-    gsap.from("#text-thought",{
-      x: 70,
-      opacity: 0,
-      ease: "power1.out",
-      scrollTrigger:{
-        trigger: '#text-thought',
-        start: 'top 70%',
-        end: 'top 50%',
-        scrub: 3,
-        //markers: true,
-      }
-    });
-
-
-    /*--================================- */
-    /*--=========== TEXTOS ============- */
-    /*--================================- */
-
-    gsap.from("#text-ui",{
-      x: -150,
-      opacity: 0,
-      ease: "back.out(1.7)",
-      scrollTrigger:{
-        trigger: '#text-ui',
-        start: 'center 80%',
-        end: 'center 50%',
-        scrub: 2,
-        //markers: true,
-      }
-    });
-
-    
-
-    
-
-    gsap.from("#text-experience",{
-      x: -160,
-      opacity: 0,
-      ease: "back.out(1.7)",
-      scrollTrigger:{
-        trigger: '#text-experience',
-        start: 'center 80%',
-        end: 'center 50%',
-        scrub: 2,
-        //markers: true,
-      }
-    });
-
-
 
     /*--================================- */
     /*--=========== LOADING AO SCROLL ============- */
     /*--================================- */
-    gsap.from("#section-1 div",{
+    gsap.from(".section-01 div",{
       y: 150,
       opacity: 0,
       ease: "power4.out",
       stagger:{each: 0.2},
       duration: 3,
       scrollTrigger:{
-        trigger: '#section-1',
-        start: 'top 80%',
-        end: 'top 50%',
+        trigger: '.section-01',
+        start: 'top 40%',
+        end: 'top 10%',
         //markers: true,
       }
     });
 
-    gsap.from("#section-2 div",{
+    gsap.from(".section-02 div",{
       y: 150,
       opacity: 0,
       ease: "power4.out",
       stagger:{each: 0.2},
       duration: 3,
       scrollTrigger:{
-        trigger: '#section-2',
-        start: 'top 80%',
-        end: 'top 50%',
+        trigger: '.section-02',
+        start: 'top 40%',
+        end: 'top 10%',
         //markers: true,
       }
     });
 
-    gsap.from("#section-3 div",{
+    gsap.from(".section-03 div",{
       y: 150,
       opacity: 0,
       ease: "power4.out",
       stagger:{each: 0.2},
       duration: 3,
       scrollTrigger:{
-        trigger: '#section-3',
-        start: 'top 80%',
-        end: 'top 50%',
+        trigger: '.section-03',
+        start: 'top 40%',
+        end: 'top 10%',
         //markers: true,
       }
     });
 
-    
+    gsap.from(".section-04 div",{
+      y: 150,
+      opacity: 0,
+      ease: "power4.out",
+      stagger:{each: 0.2},
+      duration: 3,
+      scrollTrigger:{
+        trigger: '.section-04',
+        start: 'top 40%',
+        end: 'top 10%',
+        //markers: true,
+      }
+    });
+
+    gsap.from(".section-05 div",{
+      y: 150,
+      opacity: 0,
+      ease: "power4.out",
+      stagger:{each: 0.2},
+      duration: 3,
+      scrollTrigger:{
+        trigger: '.section-05',
+        start: 'top 40%',
+        end: 'top 10%',
+        //markers: true,
+      }
+    });
 
     
     
 });
 
+/*
 ScrollTrigger.addEventListener("scrollStart", () => {
   ScrollTrigger.refresh();
 });
-
-
+*/
