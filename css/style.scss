@@ -16,7 +16,8 @@ html{
 body{
   width: 100%;
 
-  background-color: $black-dark;
+  //background-color: $black-dark;
+  background: linear-gradient(180deg, #062B53 0%, #000A1D 100%);
 
   &::-webkit-scrollbar{
       padding-right: 4px;
