@@ -22,6 +22,8 @@ bx.addEventListener('click', () =>{
 })
 */
 
+
+
 /*==================== CHANGE BACKGROUND HEADER ====================*/ 
 function scrollHeader(){
     const nav = document.querySelector('header')
